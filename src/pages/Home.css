@@ -1,0 +1,374 @@
+.home {
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #da251c 0%, #ff6b6b 50%, #ffcd00 100%);
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "⭐";
+  position: absolute;
+  font-size: 20rem;
+  opacity: 0.1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title .star {
+  display: inline-block;
+  animation: pulse 2s infinite;
+  margin: 0 1rem;
+}
+
+.hero-date {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-style: italic;
+  color: #ffe066;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.hero-author {
+  font-size: 1.2rem;
+  color: white;
+  font-style: italic;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.intro-section {
+  padding: 4rem 0;
+  width: 100%;
+  margin: 0 auto 50px;
+  background: #f8f9fa;
+}
+
+.intro-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.intro-card h2 {
+  color: #da251c;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(218, 37, 28, 0.3);
+}
+
+.stat-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.stat-img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  filter: invert(22%) sepia(99%) saturate(7492%) hue-rotate(-2deg)
+    brightness(90%) contrast(110%);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #da251c;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.stat-detail {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.significance-section {
+  padding: 4rem 0;
+  width: 100%;
+  margin: 0 auto 50px;
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #da251c;
+  margin-bottom: 3rem;
+}
+
+.significance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.significance-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.significance-card:hover {
+  border-color: #da251c;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(218, 37, 28, 0.2);
+}
+
+.significance-card.highlight {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+  border-color: #ffcd00;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+}
+
+.card-header h3 {
+  color: #da251c;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.significance-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.significance-card ul li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #333;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.significance-card ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #da251c;
+  font-weight: bold;
+}
+
+.significance-card ul li:last-child {
+  border-bottom: none;
+}
+
+.quote-section {
+  padding: 4rem 0;
+  background: linear-gradient(
+    135deg,
+    var(--color-bg-dark) 0%,
+    var(--color-bg) 100%
+  );
+}
+
+.quote-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 205, 0, 0.3);
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 6rem;
+  color: #ffcd00;
+  opacity: 0.3;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-family: Georgia, serif;
+}
+
+.quote-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+}
+
+.quote-author {
+  text-align: right;
+  font-size: 1.1rem;
+  color: #ffcd00;
+  font-weight: 600;
+}
+
+.cta-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+.intro-image img {
+  display: block;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+.cta-section h2 {
+  font-size: 2.5rem;
+  color: #da251c;
+  margin-bottom: 2rem;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.cta-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.cta-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(218, 37, 28, 0.3);
+}
+
+.cta-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.cta-card h3 {
+  color: #da251c;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .stats-grid,
+  .significance-grid,
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+  }
+}

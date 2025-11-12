@@ -1,0 +1,144 @@
+.navigation {
+  background: transparent; /* user requested transparent header */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  /* smoother transform + fade for hide/show */
+  transition: transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1), opacity 220ms ease,
+    box-shadow 280ms ease, background-color 200ms ease;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(
+    --color-on-dark
+  ); /* ensure logo text is readable on light backgrounds */
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* menu links: transparent background, smooth underline on hover */
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  color: var(--color-on-dark);
+  text-decoration: none;
+  padding: 0.6rem 0.75rem; /* less horizontal padding for cleaner underline */
+  border-radius: 6px;
+  font-weight: 600;
+  transition: color 0.18s ease, transform 0.18s ease;
+  background: transparent; /* transparent as requested */
+  box-shadow: none;
+  position: relative;
+  display: inline-block;
+}
+
+/* underline pseudo-element */
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background: var(--color-primary-red);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 3px;
+}
+
+.nav-menu li a:hover {
+  color: var(--color-primary-red);
+  transform: translate3d(0, -3px, 0);
+}
+
+.nav-menu li a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-menu li a.active {
+  color: var(--color-primary-red);
+  font-weight: 700;
+}
+
+.nav-menu li a.active::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .nav-menu li a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* hidden state when scrolling down */
+.navigation.nav-hidden {
+  /* move up exactly the nav height and fade out for a smoother feel */
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+/* slide + fade in when nav becomes visible */
+@keyframes nav-slide-in {
+  from {
+    transform: translate3d(0, -14px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.navigation.showing {
+  animation: nav-slide-in 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}

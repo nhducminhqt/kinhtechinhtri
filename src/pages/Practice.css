@@ -1,0 +1,412 @@
+.practice {
+  min-height: 100vh;
+}
+
+.practice-header {
+  background: linear-gradient(135deg, #da251c 0%, #ff6b6b 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.practice-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.practice-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+section {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  color: #da251c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #ffcd00;
+}
+
+.author {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.intro-quote {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #ffcd00;
+}
+
+.intro-quote p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #da251c;
+  font-weight: 500;
+  margin: 0;
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.modern-aspects {
+  display: grid;
+  gap: 2rem;
+}
+
+.aspect-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.aspect-card:hover {
+  border-color: #da251c;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(218, 37, 28, 0.2);
+}
+
+.aspect-card.highlight {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+  border-color: #ffcd00;
+}
+
+.aspect-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.aspect-card h3 {
+  color: #da251c;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.aspect-card p {
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.landmarks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.landmark-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.landmark-item:hover {
+  transform: translateY(-5px);
+}
+
+.landmark-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.landmark-item strong {
+  display: block;
+  color: #da251c;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.landmark-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.activity-badge {
+  background: linear-gradient(135deg, #da251c 0%, #ff6b6b 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-text {
+  background: #f0f7ff;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #2196f3;
+  margin-top: 1rem;
+}
+
+.youth-quote {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.youth-quote p:first-child {
+  font-size: 1.3rem;
+  color: #da251c;
+  margin-bottom: 1rem;
+}
+
+.quote-detail {
+  font-style: italic;
+  color: #666;
+  font-size: 1rem !important;
+}
+
+.lessons-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.lesson-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.lesson-card:hover {
+  border-color: #da251c;
+  box-shadow: 0 8px 20px rgba(218, 37, 28, 0.2);
+}
+
+.lesson-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.lesson-card h3 {
+  color: #da251c;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-subtitle {
+  color: #666;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.lesson-quote {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border-left: 4px solid #ffcd00;
+}
+
+.modern-connection {
+  background: #f0f7ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border-left: 4px solid #2196f3;
+}
+
+.vnr-responsibility {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+  border: 2px solid #b02727;
+}
+
+.vnr-responsibility {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+  border: 2px solid #e0e0e0;
+}
+.vnr-responsibility h3 {
+  color: #da251c;
+  margin-bottom: 1rem;
+}
+.responsibility-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resp-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #b02727 0%, #c86868 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.resp-content strong {
+  display: block;
+  color: #b02727;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.resp-content p {
+  color: #666;
+  margin: 0;
+}
+
+.closing-message {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.closing-quote {
+  background: linear-gradient(
+    135deg,
+    var(--color-bg-dark) 0%,
+    var(--color-bg) 100%
+  );
+  color: var(--color-on-dark);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 2px solid #ffcd00;
+}
+
+.closing-quote p {
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.8;
+  margin: 0;
+  color: #ffcd00;
+}
+
+.gratitude-section {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+  border: 2px solid #ffcd00;
+}
+
+.gratitude-content {
+  line-height: 1.8;
+  color: #333;
+}
+
+.opening-thanks {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #da251c;
+  margin-bottom: 1.5rem;
+}
+
+.thanks-sections {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.thanks-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thanks-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.hope-message {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border-left: 4px solid #da251c;
+  font-weight: 500;
+}
+
+.final-quote {
+  background: linear-gradient(135deg, #da251c 0%, #ff6b6b 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.final-quote p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .practice-header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 2rem 1.5rem;
+  }
+
+  .landmarks {
+    grid-template-columns: 1fr;
+  }
+
+  .responsibility-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resp-number {
+    margin: 0 auto;
+  }
+}
