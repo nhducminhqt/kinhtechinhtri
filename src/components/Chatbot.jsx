@@ -127,10 +127,11 @@ Câu hỏi: ${userMessage}`;
   };
 
   const suggestedQuestions = [
-    "Chiến dịch diễn ra khi nào?",
-    "Ai là người chỉ huy?",
-    "Tô Vĩnh Diện là ai?",
-    "Ý nghĩa của chiến thắng?",
+    "Cạnh tranh là gì?",
+    "Độc quyền xuất hiện như thế nào?",
+    "Vai trò của Nhà nước trong điều tiết kinh tế?",
+    "Luật Cạnh tranh 2018 quy định gì?",
+    "Làm sao để chống độc quyền?",
   ];
 
   return (
