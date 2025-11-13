@@ -279,16 +279,16 @@ function Practice() {
 
           <div className="gratitude-content">
             <p>
-              Với tâm lòng trân trọng, tôi xin gửi lời cảm ơn sâu sắc đến tất cả
-              những ai đã bỏ thời gian để cùng theo dõi bài viết này.
+              Với tấm lòng trân trọng, bọn mình xin gửi lời cảm ơn sâu sắc đến
+              tất cả những ai đã bỏ thời gian để cùng theo chúng mình.
             </p>
 
             <p>
               Trong hành trình tìm hiểu về cạnh tranh, độc quyền và điều tiết
-              nhà nước - những phạm trù cơ bản của kinh tế thị trường - tôi càng
-              nhận thức sâu sắc về con đường phát triển độc đáo của Việt Nam và
-              vai trò quan trọng của việc kết hợp hài hòa giữa thị trường và
-              định hướng xã hội chủ nghĩa.
+              nhà nước - những phạm trù cơ bản của kinh tế thị trường - chúng
+              mình càng nhận thức sâu sắc về con đường phát triển độc đáo của
+              Việt Nam và vai trò quan trọng của việc kết hợp hài hòa giữa thị
+              trường và định hướng xã hội chủ nghĩa.
             </p>
 
             <div className="thanks-sections">
@@ -311,10 +311,10 @@ function Practice() {
             </div>
 
             <p className="hope-message">
-              Tôi hy vọng rằng, kiến thức về cạnh tranh, độc quyền và điều tiết
-              nhà nước sẽ giúp thế hệ trẻ hiểu rõ hơn về nền kinh tế thị trường,
-              từ đó có những hành động đúng đắn trong việc xây dựng nền kinh tế
-              Việt Nam phát triển bền vững, hiệu quả và công bằng.
+              Chúng mình hy vọng rằng, kiến thức về cạnh tranh, độc quyền và
+              điều tiết nhà nước sẽ giúp thế hệ trẻ hiểu rõ hơn về nền kinh tế
+              thị trường, từ đó có những hành động đúng đắn trong việc xây dựng
+              nền kinh tế Việt Nam phát triển bền vững, hiệu quả và công bằng.
             </p>
 
             <div className="final-quote">
